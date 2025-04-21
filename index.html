@@ -3,42 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Gilles Gyl Matsahanga</title>
+    <style>
+ 
+        .oswald {
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight:;
+            font-style: normal;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .container {
+            position: relative;
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 12% ;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .links a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background: black ;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .links a:hover {
+            background:  black ;
+        }
+    </style>
 </head>
-<body>
-   <h1>Table de matière</h1>
-   <ul>
-    <li>
-        <a href="/pages/perso.html"></a>
-    </li>
-    <li>
-        <a href="/pages/SAE101.html"></a>
-    </li>
-    <li>
-        <a href="/pages/SAE102.html"></a>
-    </li>
-    <li>
-        <a href="/pages/SAE103.hmtl"></a>
-    </li>
-    <li>
-        <a href="/pages/SAE104.html"></a>
-    </li>
-    <li>
-        <a href="/pages/SAE105.html"></a>
-    </li>
-    <li>
-        <a href="/pages/SAE201.html"></a>
-    </li>
-    <li>
-        <a href="/pages/SAE202.html"></a>
-    </li>
-    <li>
-        <a href="/pages/SAE203.html"></a>
-    </li>
-    <li>
-        <a href="/pages/SAE204.html"></a>
-    </li>
-   </ul>
+<body class="oswald">
+    <!-- Background Video -->
+    <video class="video-background" autoplay loop muted>
+        <source src="background.mp4" type="video/mp4">
+
+    </video>
+
+    <div class="container">
+        <h1>Mes Liens</h1>
+        <p>Retrouvez moi sur :</p>
+        <div class="links">
+            <a href="https://github.com/gylbtwnbrackets" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/gilles-gyl-matsahanga-453360341/" target="_blank">LinkedIn</a>
+            <a href="cv.html">Mon CV</a>
+            <a href="certif.html">Google Cybersecurity Professional Certificate </a>
+        </div>
+    
+    </div>
 </body>
 </html>
