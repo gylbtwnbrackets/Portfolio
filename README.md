@@ -25,3 +25,6 @@
     - [AC13.06]S'intégrer dans un envirronnement propice au développement et au travail collaboratif 
 
 
+Objectif
+Apprentissage critique 
+livrables
