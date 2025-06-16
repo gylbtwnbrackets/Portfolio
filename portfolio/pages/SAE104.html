@@ -3,87 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAE 1.04 – Se présenter sur Internet </title>
+    <title>SAE 1.02 – S'initier aux réseau informatiques </title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-            background-color: #f9f9f9;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1, h2 {
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: #f8f9fa;
+            min-height: 100vh;
             color: #333;
         }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            font-weight: 300;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #343a40;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            font-weight: 600;
+            border-bottom: 2px solid #6c757d;
+            padding-bottom: 8px;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 15px 0 10px 0;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        
         .section {
             background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+        
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 1.05em;
+        }
+        
+        ul {
+            margin: 10px 0 15px 20px;
+            color: #555;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            padding-left: 5px;
+        }
+        
+        strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
         .evidence img {
             width: 100%;
             max-width: 400px;
-            margin: 10px 0;
-            border-radius: 8px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
+        
         .evidence a {
-            display: block;
-            margin-bottom: 10px;
-            color: #0066cc;
+            display: inline-block;
+            margin: 8px 0;
+            color: #495057;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            transition: all 0.3s ease;
+        }
+        
+        .evidence a:hover {
+            background: #495057;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        /* Styles pour le bouton portfolio */
+        .portfolio-btn {
+            display: inline-block;
+            background-color: #495057;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            font-size: 1.1em;
+        }
+        
+        .portfolio-btn:hover {
+            background-color: #343a40;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Styles pour l'encadré image */
+        .image-container {
+            border: 2px dashed #6c757d;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+        
+        .image-container:hover {
+            border-color: #495057;
+            background-color: #e9ecef;
+        }
+        
+        .image-placeholder {
+            color: #7f8c8d;
+            font-style: italic;
+            padding: 50px 20px;
+            font-size: 1.1em;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .portfolio-btn {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
-
-    <h1>SAE 1.04 – Se présenter sur Internet </h1>
-
+    <a href="/portfolio.html" class="portfolio-btn">← Retour au Portfolio</a>
+    
+    <h1>Projet n°4 - Se présenter sur Internet</h1>
+    
     <div class="section">
-        <h2>Objectifs du Projet </h2>
+        <h2>Objectifs du Projet</h2>
+        
+        <!-- Encadré pour l'image d'illustration -->
+        <div class="image-container">
+            <div class="image-placeholder">
+                📸 Insérer ici une image d'illustration du projet cybersécurité
+                <!-- Décommentez la ligne suivante et remplacez par le chemin de votre image -->
+                <!-- <img src="chemin/vers/votre/image.jpg" alt="Illustration du projet cybersécurité"> -->
+            </div>
+        </div>
+        
         <p>
-            Lors de ce projet, l'objectif était de créer un site Web multipages avec à l'aide de connaissance du HTML et CSS
+         Ce projet avait pour objectif la création d'un site Internet personnalisé avec du code CSS et HTML?
+
         </p>
     </div>
-
+   
     <div class="section">
         <h2>Compétences visées et Apprentissages Critiques</h2>
         <p>
-            <strong>Compétence principale :</strong> Réaliser un site Web agréable à la vue et <strong></strong><br>
+            <strong>Compétence principale :</strong> Réaliser un site Web cohérent et agréable à la vue
         </p>
-        <h3>Apprentissages Critiques : </h3>
-        <ul>
-            Utiliser un système informatique et ses outils 
-        </ul>
-        <ul>
-            Connaître l'architecture et les technologies d'un site Web
-        </ul>
         
+        <h3>Apprentissages Critiques :</h3>
+        <ul>
+            
+   
+    <li>Utiliser un sytème informatique et ses outils</li>
+    <li>Connaître l'architecture et les technologies d'un site Web</li>
+
+            
+        </ul>
+      </div>
+      <div class="section">
+        <h2>Déroulement du projet</h2>
+        <p>
+            Durant ce projet, j'ai pu développer mes compétences en cybersécurité à travers différentes activités pratiques et théoriques. 
+            L'approche pédagogique a combiné formation en ligne, travaux pratiques et présentations collaboratives pour une compréhension 
+            complète des enjeux de sécurité informatique.
+        </p>
+      </div>
+         <div class="section evidence">
+        <h2>Réalisations et Livrables</h2>
+        <p>Voici les principales réalisations de ce projet :</p>
+        
+        <ul>
+            <li><a href="./ansi.html"> Formation sur le MOOC de l'ANSSI (Attestation obtenue)</a></li>
+            <li><a href="./pwp.html"> Présentation de groupe sur la découverte de machines sur un réseau</a></li>
+        </ul>
     </div>
     <div class="section">
-        <h2> Réflexion et Autoévaluation</h2>
+        <h2>Réflexion et Autoévaluation</h2>
         <p>
-            J'ai beaucoup aimé cette SAE car elle demandait de la créativité et de la persévérance pour en arriver à un résultat satisfaisant, autant pour le créateur que l'utilisateur.<br>
-            <br><br>
-            
-            <strong>Points forts :</strong> Je pense avoir assez acquis les différents les différentes notions et ai été en mesure de les explqiuer à mes camarades<br><br>
-
-            <strong>Difficultés rencontrées :</strong> Lors de la présentation en groupe, nous n'étions pas assez coordonnées et ne connaissions pas tous nos parties du sujet<br><br>
-            <br><br>
+            <strong>Niveau actuel :</strong> Je me situe aujourd'hui à un niveau intermédiaire en cybersécurité. 
+            Je suis capable de détecter certains risques, de configurer des mots de passe robustes et de sensibiliser 
+            d'autres utilisateurs aux bonnes pratiques.
+        </p>
+        
+        <p>
+            Cette SAE m'a permis de prendre conscience de mes mauvaises habitudes initiales (comme la réutilisation 
+            de mots de passe) et de les corriger. J'ai particulièrement apprécié le TP d'introduction au hacking 
+            qui nous a été proposé, car il a rendu concrètes les vulnérabilités théoriques.
+        </p>
+        
+        <p>
+            <strong>Points forts :</strong> J'ai bien assimilé les différentes notions abordées et j'ai été capable 
+            de les expliquer clairement à mes camarades lors des échanges.
+        </p>
+        
+        <p>
+            <strong>Difficultés rencontrées :</strong> Lors de la présentation en groupe, nous manquions de coordination 
+            et certains membres ne maîtrisaient pas suffisamment leur partie du sujet, ce qui a nui à la fluidité 
+            de notre exposé.
+        </p>
+        
+        <p>
+            <strong>Perspectives d'amélioration :</strong> Je souhaite approfondir mes connaissances en tests de pénétration 
+            et continuer à me former sur les nouvelles menaces émergentes dans le domaine de la cybersécurité.
         </p>
     </div>
-         
-     <div class="section evidence">
-        <h2> Traces et Réalisations</h2>
-        
-            <ul>
-                <a href="https://github.com/gylbtwnbrackets/Mon-site">Lien vers mon projet</a>
-            </ul>
-            <ul>
-                <a href="https://gylbtwnbrackets.github.io/Mon-site/">Lien vers le site même</a>
-            </ul>
-    
-    </div>
+ 
 </body>
 </html>
