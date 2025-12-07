@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV</title>
-    </head>
+    <style>
+        /* Conserver le style de base de vos pages SAE pour la cohérence */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; padding: 20px; max-width: 1000px; margin: auto; background-color: #f8f9fa; min-height: 100vh; color: #333; }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; font-size: 2.2em; font-weight: 300; text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .portfolio-btn { display: inline-block; background-color: #495057; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: 600; margin-bottom: 30px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); font-size: 1.1em; }
+        .portfolio-btn:hover { background-color: #343a40; transform: translateY(-3px); box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); }
+        .pdf-viewer { width: 100%; height: 800px; border: 1px solid #ccc; margin-top: 20px; }
+        p { text-align: justify; margin-bottom: 15px; color: #555; font-size: 1.05em; }
+    </style>
+</head>
 <body>
     <a href="../index.html" class="portfolio-btn">← Retour au Portfolio</a>
     <h1>Curriculum Vitae</h1>
-    <p>Mon CV est disponible en téléchargement au format PDF. Il détaille mes expériences, compétences et formations.</p>
+    <p>Mon CV est affiché ci-dessous. Vous pouvez le visualiser directement dans la page ou le télécharger.</p>
     
-    <a href="../assets/docs/CV_Gilles_Matsahanga.pdf" class="download-btn" download>Télécharger le CV (PDF)</a>
-    
-    </body>
+    <iframe class="pdf-viewer" src="../assets/docs/CV_Gilles_Matsahanga.pdf" type="application/pdf">
+        <p>Votre navigateur ne supporte pas l'affichage PDF. Vous pouvez <a href="../assets/docs/CV_Gilles_Matsahanga.pdf" download>télécharger le CV</a>.</p>
+    </iframe>
+</body>
 </html>
