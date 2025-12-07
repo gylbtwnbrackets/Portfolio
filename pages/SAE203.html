@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE 2.03 – Solutions de Communication</title>
+    <style>
+        /* Copiez ici le bloc style du fichier SAE201.html ci-dessus */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; padding: 20px; max-width: 1000px; margin: auto; background-color: #f8f9fa; min-height: 100vh; color: #333; }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; font-size: 2.2em; font-weight: 300; text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h2 { color: #343a40; margin-bottom: 15px; font-size: 1.5em; font-weight: 600; border-bottom: 2px solid #6c757d; padding-bottom: 8px; }
+        h3 { color: #2c3e50; margin: 15px 0 10px 0; font-size: 1.2em; font-weight: 500; }
+        .section { background: white; padding: 30px; margin-bottom: 25px; border-radius: 15px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); border: 1px solid rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .section:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(0,0,0,0.15); }
+        p { text-align: justify; margin-bottom: 15px; color: #555; font-size: 1.05em; }
+        ul { margin: 10px 0 15px 20px; color: #555; }
+        li { margin-bottom: 8px; padding-left: 5px; }
+        strong { color: #2c3e50; font-weight: 600; }
+        .portfolio-btn { display: inline-block; background-color: #495057; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: 600; margin-bottom: 30px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); font-size: 1.1em; }
+        .portfolio-btn:hover { background-color: #343a40; transform: translateY(-3px); box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); }
+        .image-container { border: 2px #6c757d; border-radius: 15px; padding: 10px; text-align: center; margin: 10px 0; background-color: #f8f9fa; transition: all 0.3s ease; }
+        .image-container:hover { border-color: #495057; background-color: #e9ecef; }
+        .image-placeholder { color: #7f8c8d; font-style: italic; padding: 50px 20px; font-size: 1.1em; }
+        .image-container img { max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .evidence a { display: inline-block; margin: 8px 0; color: #495057; text-decoration: none; font-weight: 500; padding: 8px 15px; border-radius: 8px; background: #f8f9fa; border: 1px solid #dee2e6; transition: all 0.3s ease; }
+        .evidence a:hover { background: #495057; color: white; transform: scale(1.05); }
+        @media (max-width: 768px) { body { padding: 15px; } h1 { font-size: 1.8em; } .section { padding: 20px; } .portfolio-btn { padding: 12px 25px; font-size: 1em; } }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="portfolio-btn">← Retour au Portfolio</a>
+    <h1>Projet n°7 – SAE 2.03 : Mise en place de Services (Web/VoIP)</h1>
+
+    <div class="section">
+        <h2>Objectifs du Projet</h2>
+        <div class="image-container">
+            <div class="image-placeholder">
+                 <img src="../assets/img/sae203.png" alt="Architecture Web ou VoIP"> 
+            </div>
+        </div>
+        <p>
+            Ce projet consistait à configurer des services de communication essentiels pour une entreprise.
+            Nous avons mis en place un serveur Web dynamique (Apache/Nginx) et une solution de Téléphonie sur IP (Asterisk).
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Compétences visées</h2>
+        <p><strong>Compétence principale :</strong> Créer des outils et applications informatiques (Services Réseaux)</p>
+        <h3>Apprentissages Critiques :</h3>
+        <ul>
+            <li>Connaître l’architecture et les technologies d’un site Web (AC13.04)</li>
+            <li>Choisir les mécanismes de gestion des données adaptés (AC13.05)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Déroulement du projet</h2>
+        <p>
+            J'ai été chargé de la configuration du serveur Web et de la base de données associée. J'ai aussi participé
+            à la configuration du plan de numérotation sur le serveur VoIP pour permettre les appels internes.
+        </p>
+    </div>
+
+    <div class="section evidence">
+        <h2>Réalisations et Livrables</h2>
+        <ul>
+            <li><a href="../assets/docs/config_asterisk.pdf"> Fichiers de configuration Asterisk</a></li>
+            <li><a href="https://votre-site-web.com"> Lien vers le site web déployé</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Réflexion et Autoévaluation</h2>
+        <p>
+            <strong>Points forts :</strong> La mise en place du serveur Web a été rapide et fonctionnelle.
+        </p>
+        <p>
+            <strong>Difficultés rencontrées :</strong> La configuration du NAT pour la VoIP a posé problème (problème de son à sens unique).
+        </p>
+    </div>
+</body>
+</html>
